@@ -1,0 +1,643 @@
+@media only screen and (max-width: 768px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    .m-hidden { display: none; }
+    
+    .header {
+        display: none;
+    }
+
+    .header-user-photo {
+        border: solid 2px $color-grey;
+        margin-bottom: 10px;
+    }
+
+    .m-header {
+        display: block;
+    }
+    
+    .main {
+        padding: 0 10px;
+        display: block;
+    }
+    
+    .main-col {
+        padding: 0 20px;
+        margin: 0;
+        flex: 1;
+    }
+    
+    .nav {
+        margin-bottom: 0;
+        border-bottom: 0;
+        box-sizing: content-box;
+        
+        &-container {
+            width: 100%;
+            border-bottom: solid 2px $color-grey-dark;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+        
+        &-item {
+            height: 30px;
+            padding: 5px 20px;
+            margin-bottom: 0;
+            border-radius: 20px;
+            flex: 0 0 0;
+            background: $color-grey-darker;
+            
+            & + & {
+                margin-left: 0;
+            }
+            
+            &.current {
+                background: lighten($color-grey-darker, 30%);
+            }
+            
+            &-link {
+                line-height: 20px;
+                color: $color-white;
+                
+                &_home {
+                    background: url("./../img/home_white.png") no-repeat center center;
+                }
+                
+                &.current {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    .stories-item {
+        //width: 100px;
+        margin-bottom: 60px;
+    }
+    
+    .stories-container {
+        display: none;
+    }
+
+    .stories-item-box {
+        position: relative;
+        bottom: 0;
+    }
+
+    .stories-outer {
+        margin-bottom: 40px;
+        max-width: 320px;
+        width: 100%;
+        overflow: hidden
+    }
+
+    .stories-item-name {
+        top: 105px;
+    }
+
+    .slider-controls {
+        display: none;
+    }
+    
+    .slider-container {
+        padding: 0;
+    }
+
+    .footer-inner {
+        flex-wrap: wrap;
+    }
+
+    .footer-col {
+        flex: 1 1 100%; 
+    }
+
+    .btn-floated {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    // START:модалка
+    .modal-head-close {
+        display: none;
+    }
+
+    .modal-user-image {
+        width: auto;
+    }
+
+    .modal-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .modal-col {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    // END:модалка
+    
+    // START:страница профиля 
+    .section-row {
+        flex-direction: column;
+    }
+    
+    .section-col {
+        flex: 1;
+        margin: 0 0 20px 0;
+    }
+
+    .profile-wrapper-caption {
+        text-align: left;
+    }
+    
+    .profile-wrapper {
+        margin: 0;
+    }
+
+    .form-group_right {
+        text-align: left;
+    }
+
+    .form-group_mb30, .form-group_mb40 {
+        margin-bottom: 20px;
+    }
+    // END: страница профиля 
+    
+    // START:Слайдер
+    .slider-wrapper {
+        flex-wrap: wrap;
+    }
+    
+    .slider-item {
+        flex: 1 1 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    // END:Слайдер
+    
+    // START:Здоровье 3 стр
+    .users-item {
+        flex: 1 1 100%;
+        
+        & + & {
+            margin-left: 0;    
+        }
+    }
+    // END:Здоровье 3 стр
+    
+    // Фильтры
+    .btn-floated {
+        top: 0;
+        
+        & br {
+            display: none;
+        }
+    }
+    
+    .filter-row {
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .filter-col {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .filter-select_sm {
+        max-width: 100%;
+    }
+
+    .filter-toolbar {
+        align-self: flex-start;
+    }
+
+
+
+    .user-profile {
+        flex-wrap: wrap;
+    }
+
+    .user-profile-card {
+        flex: 1;
+        margin: 0;
+    }
+
+    .user-profile-contacts {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+
+    table.datatable-table tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    table.datatable-table .datatable-cell {
+        display: block;
+    }
+
+
+
+    .comment-gallery {
+        flex-wrap: wrap;
+    }
+    
+    .comment-gallery-item {
+        width: auto;
+        height: auto;
+        flex: 1 1 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    .gallery {
+        flex-direction: column;
+        
+        &-item {
+            height: auto;
+            width: auto;
+            max-width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+            flex: 1 1 100%;
+            margin-bottom: 20px;
+            
+            &+& {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .gallery-main-list {
+        flex-direction: column;
+    }
+
+    .gallery-main-item {
+        height: auto;
+        width: auto;
+        margin-right: 0;
+        margin-left: 0;
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+
+        &+& {
+            margin-left: 0;
+        }
+    }
+
+    .gallery-main-item-photo {
+        width: auto;
+        height: auto;
+    }
+    
+    
+    .dialog-detail-icon {
+        width: 32px;
+        height: 32px;
+        margin: 0;
+        background-size: cover;
+        top: 0;
+        right: 0;
+    }
+
+
+    
+    .dialog-wrapper {
+        flex-direction: column;
+    }
+
+    .dialog-wrapper .user-profile.user-profile_dialogs {
+        display: none;
+    }
+
+
+
+
+    .forum-tab-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .forum-tab {
+        margin-bottom: 15px;
+        
+        &+& {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .forum-article {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .forum-article-photo {
+        width: 100%;
+        height: 200px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 15px;
+        overflow: hidden;
+        position: relative;
+        
+        & img {
+            width: 100%;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    .forum-article-content {
+        margin-bottom: 15px;
+    }
+
+    .forum-article-button {
+        align-self: center;
+    }
+
+
+    .grid-col {
+        flex: 1 1 100%;
+    }
+
+    .grid-item {
+        margin-bottom: 20px;
+    }
+
+
+
+    .ads-item {
+        flex-direction: column;
+        
+        &-photo {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        
+        &-contacts {
+            max-width: 100%;
+            width: 100%;
+            margin-bottom: 20px;
+            position: relative;
+            top: auto;
+            right: auto;
+            
+            & .btn {
+                font-size: 14px;
+            }
+            
+            &-date {
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    }
+
+
+
+    .interview-item {
+        flex: 1 1 100%;
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+
+    .interview-item-photo {
+        width: 100%;
+    }
+
+
+
+
+    .group-list {
+        flex-direction: column;
+    }
+
+    .group-list-item {
+        margin-bottom: 20px;
+    }
+
+    .group-list-item + .group-list-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .group-photo {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .group-banner {
+        height: auto;
+    }
+
+    .group-tab-bar {
+        flex-wrap: wrap;
+    }
+
+    .group-tab-bar-item {
+        flex: 0 0 33%;
+        
+        &+& {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .content-title {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .forum-tab-list {
+        border-bottom: solid 1px $border-light;
+    } 
+
+    .group-controls-row {
+        flex-wrap: wrap;
+    }
+
+    .group-comment-footer-row {
+        justify-content: flex-start;
+    }
+
+    .forum-stat-list {
+        flex-wrap: wrap;
+    }
+    
+    .forum-stat {
+        flex: 1 1 100%;
+        
+        &+& {
+            margin-left: 0;
+        }
+    }
+
+    .forum-filter-row {
+        margin-bottom: 0;
+        flex-wrap: wrap;
+    }
+
+    .forum-filter-select {
+        flex: 1;
+    }
+
+    .forum-filter-col {
+        margin-bottom: 15px;
+        flex: 1 1 100%;
+    }
+
+    .forum-filter-col_left, .forum-filter-col_right {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .forum-subject-bar {
+        flex-wrap: wrap;
+    }
+
+    .forum-subject-bar-title {
+        font-size: 20px;
+        flex: 1 1 100%;
+        margin-bottom: 15px;
+    }
+
+    .forum-subject-bar-controls {
+        flex-wrap: wrap;
+    }
+
+    .forum-subject-bar-controls-item {
+        flex: 1 1 50%;
+    }
+
+    .forum-subject-bar-controls-item[data-forum-subject-ctrl] {
+        margin-left: 0;
+    }
+    
+    .interview-item-user {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .interview-item-user-name {
+        font-size: 18px;
+    }
+
+    .filter-col_flexed + .filter-col_flexed {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .group-album-list {
+        flex-wrap: wrap;
+    }
+    
+    .group-album-item {
+        flex: 1 1 100%;
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .group-album-icon {
+        margin-right: 15px;
+    }
+    
+    .group-album-name {
+        font-size: 14px;
+        flex: 1;
+    }
+    
+    .group-photo-album-list {
+        flex-wrap: wrap;
+    }
+    
+    .group-photo-album-item {
+        display: flex;
+        flex: 1 1 100%;
+        margin-bottom: 30px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .group-photo-album-image {
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+
+    .group-photo-album-name {
+        font-size: 14px;
+        flex: 1;
+    }
+    
+    .music-searchbar {
+        flex-wrap: wrap;
+        
+        & .music-searchbar-label {
+            flex: 1 1 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+    }
+    
+    .music-tab-bar {
+        flex-wrap: wrap;
+    }
+
+    .music-tab {
+        flex: 1 1 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 10px;
+        
+        &+& {
+            padding-left: 10px;
+            padding-right: 10px;
+            border: none;
+        }
+    }
+
+    .music-track-item {
+        margin-bottom: 15px;
+    }
+
+    .music-track-user {
+        margin-bottom: 10px;
+    }
+
+    .music-track-info {
+        position: static;
+    }
+
+    .music-track-controls-btn.replay, .music-track-controls-btn.download {
+        display: none;
+    } 
+}

@@ -1,0 +1,185 @@
+.btn-group {
+    display: flex;
+    
+    &_right {
+        justify-content: flex-end;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    
+    &-floated {
+        position: absolute;
+        top: 5px;
+        
+        &_left {
+            left: 0;
+        }
+        
+        &_right {
+            right: 0;
+        }
+        
+        &_top {
+            top: -5px;
+        }
+    }
+
+    &_primary {
+        text-align: center;
+        color: $color-white;
+        padding: 7px 15px;
+        border: none;
+        border-radius: 3px;
+        background: $color-gold;
+        transition: background 0.3s ease;
+        
+        &:hover {
+            background: $color-gold-dark;
+        }
+    }
+    
+    &_icon {
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+        border: none;
+        background: url("./../img/btn-enter_30.png") no-repeat center center;
+    }
+    
+    &_small {
+        color: $color-white;
+        padding: 4px;
+        border-radius: 3px;
+        border: solid 1px $color-grey;
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+    
+    &_inline {
+        font-size: 12px;
+        margin: 0 2px;
+    }
+
+    &_green {
+        background: $color-green-dark;
+        border: solid 1px $color-green-dark;
+
+        &:hover {
+            background: darken($color-green-dark, 10%);
+        }
+    }
+
+    &_blue {
+        background: $color-blue-dark;
+        border: solid 1px $color-blue-dark;
+
+        &:hover {
+            background: darken($color-blue-dark, 10%);
+        }
+    }
+    
+    &_jade {
+        background: $color-green;
+        border: solid 1px $color-green;
+
+        &:hover {
+            background: darken($color-green, 10%);
+        }
+    }
+
+    &_jam {
+        background: $color-red-darker;
+        border: solid 1px $color-red-darker;
+
+        &:hover {
+            background: darken($color-red-darker, 10%);
+        }
+    }
+
+    &_yellow {
+        color: $color-red-darker;
+        background: $color-yellow;
+        border: solid 1px $color-yellow;
+
+        &:hover {
+            background: darken($color-yellow, 10%);
+        }
+    }
+
+    &_wave {
+        color: $color-white;
+        background: $color-blue;
+        border: solid 1px $color-blue;
+
+        &:hover {
+            background: darken($color-blue, 10%);
+        }
+    }
+    
+    &_azure {
+        color: $color-white;
+        background: $color-blue-light;
+        border: solid 1px $color-blue-light;
+
+        &:hover {
+            background: darken($color-blue-light, 10%);
+        }
+        
+        &.btn_ghost {
+            color: $color-blue-light;
+            background: transparent;
+            border: solid 1px $color-blue-light;
+            
+            &:hover {
+                color: $color-white;
+                background: $color-blue-light;
+            }
+        }
+    }
+
+    &_purple {
+        color: $color-white;
+        background: $color-purple;
+        border: solid 1px $color-purple;
+
+        &:hover {
+            background: darken($color-purple, 10%);
+        }
+    }
+
+    &_blue-dark {
+        color: $color-white;
+        background: $color-blue-darker;
+        border: solid 1px $color-blue-darker;
+
+        &:hover {
+            background: darken($color-blue-darker, 10%);
+        }
+    }
+    
+    &_ghost {
+        color: $color-grey;
+        background: transparent;
+
+        &:hover {
+            color: $color-white;
+            background: $color-grey-dark;
+        }
+        
+    }
+
+    &_ghost-white {
+        color: $color-grey;
+        background: $color-white;
+
+        &:hover {
+            color: $color-white;
+            background: $color-grey-darker;
+        }
+
+    }
+    
+}

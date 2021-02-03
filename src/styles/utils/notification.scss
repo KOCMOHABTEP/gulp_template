@@ -1,0 +1,47 @@
+.notification {
+    max-width: 320px;
+    width: 100%;
+    padding: 8px 12px 8px 24px;
+    min-height: 50px;
+    background: $color-white;
+    box-shadow: $box-shadow-soft;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: fixed;
+    transform: translate(380px, 0);
+    top: 30px;
+    right: -380px;
+    
+    &.visible {
+        transform: translate(0, 0);
+        right: 20px;
+    }
+    
+    &:after {
+        content: "";
+        width: 4px;
+        height: 100%;
+        background: $color-red;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    &.error:after {
+        background: $color-red;
+    }
+
+    &.success:after {
+        background: $color-green-dark;
+    }
+    
+    &-title {
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    &-message {
+        font-size: 12px;
+    }
+}

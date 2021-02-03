@@ -1,0 +1,56 @@
+$font-size: 14px;
+
+$width-page: 1280px;
+
+$color-white: #ffffff;
+$color-white-dark: #f2f2f2;
+
+$color-black: #000000;
+
+$color-grey-main: #c4c4c4; // - оригинальный
+$color-grey: #bbbbbb; // - модифицированный
+$color-grey-light: #e5e5e5;
+$color-grey-dark: #4D4D4D;
+$color-grey-darker: #333333;
+
+$color-gold: #E8A133;
+$color-gold-dark: darken($color-gold, 15%);
+
+$color-blue-light: #6A93D3;
+$color-blue: #0796FE;
+$color-blue-dark: #003773;
+$color-blue-darker: #5772C7;
+
+$color-purple: #7B7BA9;
+$color-purple-dark: #5772C7;
+
+
+$color-pink: #E40B80;
+
+$color-red-light: #F9BDAB;
+$color-red: #EC1A3B;
+$color-red-dark: #7C1B2B;
+$color-red-darker: #9E0823;
+
+$color-green: #2E8857;
+$color-green-dark: #4C8F22;
+
+$color-yellow: #F9ED32;
+
+$border: #4D4D4D;
+$border-light: #C4C4C4;
+
+$box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+$box-shadow-soft: 0 0 4px rgba(0, 0, 0, 0.25);
+$box-shadow-soft-red: 0 0 4px rgba(255, 0, 0, 0.5);
+$box-shadow-hard: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+$background-opacity: rgba(0, 0, 0, 0.8);
+
+$color-text: #4D4D4D;
+$color-text-grey: #C4C4C4;
+$color-text-hover: #C4C4C4;
+
+$color-chat-blue: #6A93D3;
+$color-chat: #EBF1F8;
+$color-chat-light: #F2F9F4;

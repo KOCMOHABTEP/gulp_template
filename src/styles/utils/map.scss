@@ -1,0 +1,183 @@
+.map-tooltip {
+    max-width: 170px;
+    position: absolute;
+    
+    &:hover &-container {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    &-inner {
+        position: relative;
+    }
+    
+
+    &-text {
+        font-size: 12px;
+        padding: 3px 5px 3px 25px;
+        position: relative;
+        margin-bottom: 5px;
+        background: rgba(255,255,255,0.6);
+
+        &_blue {
+            color: $color-blue-dark;
+        }
+        
+        &_green {
+            color: $color-green;
+        }
+        
+        &_red {
+            color: $color-red-darker;
+        }
+    }
+    
+    &-container {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    
+    
+    &-icon {
+        width: 40px;
+        height: 46px;
+        position: absolute;
+        top: 0;
+        left: -20px;
+        z-index: 10;
+
+        &_blue {
+            background: url("/build/img/icon_map-business.png") no-repeat center center;
+        }
+
+        &_green {
+            background: url("/build/img/icon_map-meetins.png") no-repeat center center;
+        }
+
+        &_red {
+            background: url("/build/img/icon_map-help.png") no-repeat center center;
+        }
+    }
+    
+    &-controls {
+        text-align: right;
+    }
+    
+    &-btn {
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 3px;
+        border: none;
+        transition: all 0.3s ease;
+        display: inline-block;
+        
+        &_blue {
+            color: $color-white;
+            background: $color-blue-dark;
+            
+            &:hover {
+                background: darken($color-blue-dark, 10%);
+            }
+        }
+
+        &_green {
+            color: $color-white;
+            background: $color-green;
+
+            &:hover {
+                background: darken($color-green, 10%);
+            }
+        }
+        
+        &_red {
+            color: $color-white;
+            background: $color-red-darker;
+
+            &:hover {
+                background: darken($color-red-darker, 10%);
+            }
+        }
+    }
+    
+}
+
+.map-marker {
+    max-width: 170px;
+    position: absolute;
+    
+    &:hover .map-marker-container{
+        visibility: visible;
+        opacity: 1;
+    } 
+    
+    &-container {
+        position: relative;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    
+    &-preview {
+        display: flex;
+        background: rgba(255,255,255,0.6);
+    } 
+    
+    &-image {
+        width: 50px;
+        height: 30px;
+        flex-basis: 50px;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+    
+    &-text {
+        font-weight: bold;
+        font-size: 12px;
+        color: $color-blue;
+        padding: 2px 10px;
+    }
+
+    &-inner {
+        position: relative;
+    }
+    
+    &-icon {
+        width: 20px;
+        height: 26px;
+        margin: 0 auto;
+        background: url("/build/img/icon_map-travel.png") no-repeat center center;
+    }
+    
+    &-label {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        color: $color-white;
+    }
+    
+    &-controls {
+        display: flex;
+    }
+    
+    &-btn {
+        color: $color-white;
+        padding: 3px 5px;
+        border: solid 1px $color-blue;
+        border-radius: 3px;
+        background: $color-blue;
+        
+        &_left {
+            color: $color-blue;
+            background: $color-white;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            flex: 1;
+        }
+        
+        &_right {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
